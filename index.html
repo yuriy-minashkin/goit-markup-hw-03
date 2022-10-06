@@ -19,14 +19,14 @@
       <nav class="site-nav">
         <a class="logo-header" href="./index.html" lang="en">Web<span class="logo-black">Studio</span></a>
         <ul class="sub-nav list">
-          <li class="item active"><a href="./index.html">Студія</a></li>
-          <li class="item"><a href="./portfolio.html">Портфоліо</a></li>
-          <li class="item"><a href="#">Контакти</a></li>
+          <li class="item"><a class="link active" href="./index.html">Студія</a></li>
+          <li class="item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
+          <li class="item"><a class="link" href="#">Контакти</a></li>
         </ul>
       </nav>
       <ul class="contacts-header list">
-        <li class="item"><a href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a></li>
-        <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="item"><a class="link" href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a></li>
+        <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </div>
   </header>
@@ -41,6 +41,8 @@
     
     <section class="features section">
       <div class="container">
+        <!-- h2 Особливості скритий-->
+        <h2 class="title">Особливості</h2>
         <ul class="items list">
           <li class="item">
             <h3 class="subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -79,23 +81,31 @@
         <ul class="items list">
           <li class="item">
             <img class="img" src="./images/igor-demyanenko.jpg" alt="Ігор Дем'яненко" width="270">
-            <h3 class="subtitle">Ігор Дем'яненко</h3>
-            <p class="text" lang="en">Product Designer</p>
+            <div class="info-box">
+              <h3 class="subtitle">Ігор Дем'яненко</h3>
+              <p class="text" lang="en">Product Designer</p>
+            </div>
           </li>
           <li class="item">
             <img class="img" src="./images/olga-repina.jpg" alt="Ольга Рєпіна" width="270">
-            <h3 class="subtitle">Ольга Рєпіна</h3>
-            <p class="text" lang="en">Frontend Developer</p>
+            <div class="info-box">
+              <h3 class="subtitle">Ольга Рєпіна</h3>
+              <p class="text" lang="en">Frontend Developer</p>
+            </div>
           </li>
           <li class="item">
             <img class="img" src="./images/mykola-tarasov.jpg" alt="Микола Тарасов" width="270">
-            <h3 class="subtitle">Микола Тарасов</h3>
-            <p class="text" lang="en">Marketing</p>
+            <div class="info-box">
+              <h3 class="subtitle">Микола Тарасов</h3>
+              <p class="text" lang="en">Marketing</p>
+            </div>
           </li>
           <li class="item">
             <img class="img" src="./images/myhailo-ermakov.jpg" alt="Михайло Єрмаков" width="270">
-            <h3 class="subtitle">Михайло Єрмаков</h3>
-            <p class="text" lang="en">UI Designer</p>
+            <div  class="info-box">
+              <h3 class="subtitle">Михайло Єрмаков</h3>
+              <p class="text" lang="en">UI Designer</p>
+            </div>
           </li>
         </ul>
       </div>

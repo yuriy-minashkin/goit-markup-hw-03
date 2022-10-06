@@ -38,6 +38,8 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
   color: var(--primary-color);
   background-color: var(--primary-background-color);
 }
@@ -51,7 +53,6 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
- 
 }
 
 .section {
@@ -91,7 +92,6 @@ li {
 /*---------------------------- Header--------------------------- */
 
 .header {
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid var(--border-line);
@@ -102,7 +102,6 @@ li {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
   margin-right: 93px;
 }
@@ -132,11 +131,11 @@ li {
   display: flex;
 }
 
-.sub-nav .item {
+.sub-nav .link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding: 24px 0 25px;
   color: var(--title-color);
 }
 
@@ -148,31 +147,30 @@ li {
   color: var(--accent-color);
 }
 
-.site-nav .item:hover,
-.site-nav .item:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--accent-color);
 }
 
-.contacts-header .item {
+.contacts-header .link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding: 24px 0 25px;
 }
 
 .contacts-header .item:first-child {
   margin-right: 50px;
 }
 
-.contacts-header .item:hover,
-.contacts-header .item:focus {
+.contacts-header .link:hover,
+.contacts-header .link:focus {
   color: var(--accent-color);
 }
 
 /*-----------------------------Studio page-Hero------------------------------- */
 
 .hero.section {
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding: 200px 0; 
@@ -217,25 +215,37 @@ li {
 
 /*-----------------------Studio page - Features----------------------------------*/
 
-
+/*!-- h2 Особливості скритий-->*/
+.features .title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .features.section {
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
+.features .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features .items {
   display: flex;
-  justify-content: space-between;
 }
 
 .features .subtitle {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: left;
   color: var(--title-color);
@@ -244,9 +254,7 @@ li {
 }
 
 .features .text {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   text-align: left;
   width: 270px;
 }
@@ -254,7 +262,6 @@ li {
 /* -------------------------Studio page - Services------------------------------ */
 
 .services.section {
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 0;
@@ -265,7 +272,6 @@ li {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
   color: var(--title-color);
   text-align: center;
   min-width: 366px;
@@ -275,6 +281,7 @@ li {
 .services .items {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .services .img {
@@ -284,7 +291,6 @@ li {
 /*------------------------- Studio page - Team---------------------------------- */
 
 .team.section {
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--secondary-background-color);
@@ -294,7 +300,6 @@ li {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
   color: var(--title-color);
   text-align: center;
   min-width: 264px;
@@ -304,6 +309,7 @@ li {
 .team .items {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .team .item {
@@ -312,19 +318,16 @@ li {
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--primary-background-color);
-  padding-bottom: 30px;
 }
 
 .team .img {
   display: block;
-  margin-bottom: 30px;
 }
 
 .team .subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--title-color);
   margin-bottom: 10px;
 }
@@ -332,13 +335,15 @@ li {
 .team .text {
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+}
+
+.team .info-box {
+  padding: 30px 0;
 }
 
 /* ------------------------Portfolio page - Buttons--------------------------------- */
 
 .portfolio.section {
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -358,7 +363,6 @@ li {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  letter-spacing: 0.03em;
   text-align: center;
   border-radius: 4px;
   padding: 6px 22px;
@@ -377,10 +381,25 @@ li {
 
 /* ----------------------Portfolio - work samples--------------------------------- */
 
+/*-- h1 Портфоліо скритий--*/
+.portfolio .title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .portfolio .items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; 
+  justify-content: space-between;
+  gap: 30px; 
 }
 
 .portfolio-description {
@@ -389,10 +408,6 @@ li {
   border-top: none;
   background-color: var(--primary-background-color);
   padding: 20px 24px;
-}
-
-.portfolio .item:nth-child(-n+6) {
-  margin-bottom: 30px;
 }
 
 .portfolio-img {
@@ -414,7 +429,6 @@ li {
   width: 322px;
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
   text-align: left;
 }
 
@@ -422,7 +436,6 @@ li {
 /* ------------------------------Footer------------------------------------- */
 
 .footer {
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--hero-footer-background-color);
@@ -434,7 +447,6 @@ li {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
   margin-bottom: 20px;
 }
@@ -446,9 +458,7 @@ li {
 .contacts-footer .link {
   display: inline-block;
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--footer-contacts-color);
 }
 
